@@ -10,8 +10,6 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 
 
 def disemvowel(string):
-    vowels = ['a', 'e', 'i', 'o', 'u']
-    vowels.extend([alphabets.upper() for alphabets in vowels])
-    vowels = "".join(vowels)
+    vowels = 'aeiouAEIOU'
     table = string.maketrans("", "", vowels)
     return string.translate(table)
